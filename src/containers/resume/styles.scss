@@ -1,0 +1,125 @@
+.resume {
+    width: 100%;
+}
+
+.timeline {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.timeline-item:hover .timeline-content {
+    transform: scale(1.02);
+    transition: 0.3s ease;
+}
+
+
+.timeline__experience {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__header-text {
+        color: var(--yellow-theme-main-color);
+        font-size: 1.4rem;
+        font-weight: 700;
+        position: relative;
+        padding-bottom: 6px;
+        margin-bottom: 20px;
+        border-bottom: 2px solid var(--yellow-theme-main-color);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: 5px;
+            background-color: var(--yellow-theme-main-color);
+            bottom: -1px;
+        }
+
+        &::before {
+            left: 0;
+        }
+
+        &::after {
+            right: 0;
+        }
+    }
+}
+
+.custom-timeline {
+    position: relative;
+    padding-left: 30px;
+    border-left: 2px solid var(--yellow-theme-main-color);
+    width: 100%;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 50px;
+    position: relative;
+    gap: 12px;
+
+    .timeline-icon {
+        position: absolute;
+        left: -18px;
+        top: 4px;
+        background-color: #181818;
+        color: var(--yellow-theme-main-color);
+        padding: 6px;
+        border-radius: 50%;
+        font-size: 14px;
+        border: 2px solid var(--yellow-theme-main-color);
+        width: 32px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .timeline-content {
+        padding-left: 30px;
+        padding-top: 2px;
+
+        h3 {
+            font-size: 1.5rem; // increased from 1rem
+            font-weight: 600;
+            color: var(--yellow-tint-theme-sub-text-color);
+            margin-bottom: 14px; // slightly more space below heading
+        }
+
+        h4 {
+            font-size: 1.4rem; // increased from 0.95rem
+            font-weight: 600;
+            color: var(--yellow-theme-sub-text-color);
+            margin-bottom: 16px; // more spacing
+        }
+
+        p {
+            font-size: 1.3rem; // increased from 0.875rem
+            color: var(--yellow-tint-theme-sub-text-color);
+            line-height: 1.8; // a bit more line height for readability
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .timeline {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .timeline__experience {
+        width: 100%;
+        max-width: 100%;
+    }
+}

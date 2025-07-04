@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/My-Portfolio/static/css/main.bd8ecf7a.css",
-    "main.js": "/My-Portfolio/static/js/main.13786753.js",
-    "static/media/Netflix.jpg": "/My-Portfolio/static/media/Netflix.356a4f01fb74c440eb9f.jpg",
-    "static/media/Meme.avif": "/My-Portfolio/static/media/Meme.808300c967dba883ed71.avif",
-    "index.html": "/My-Portfolio/index.html",
-    "main.bd8ecf7a.css.map": "/My-Portfolio/static/css/main.bd8ecf7a.css.map",
-    "main.13786753.js.map": "/My-Portfolio/static/js/main.13786753.js.map"
+    "main.css": "/static/css/main.bd8ecf7a.css",
+    "main.js": "/static/js/main.b26e00e2.js",
+    "static/media/Netflix.jpg": "/static/media/Netflix.356a4f01fb74c440eb9f.jpg",
+    "static/media/Meme.avif": "/static/media/Meme.808300c967dba883ed71.avif",
+    "index.html": "/index.html",
+    "main.bd8ecf7a.css.map": "/static/css/main.bd8ecf7a.css.map",
+    "main.b26e00e2.js.map": "/static/js/main.b26e00e2.js.map"
   },
   "entrypoints": [
     "static/css/main.bd8ecf7a.css",
-    "static/js/main.13786753.js"
+    "static/js/main.b26e00e2.js"
   ]
 }

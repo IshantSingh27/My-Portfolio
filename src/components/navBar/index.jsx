@@ -24,7 +24,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar__container">
         <Link to="/" className="navbar__container__logo">
-          <img src="/icon.jpg" alt="Logo" />
+          <img src={`${process.env.PUBLIC_URL}/icon.jpg`} alt="Logo" />
         </Link>
 
         <ul className={`navbar__container__menu ${toggleIcon ? "active" : ""}`}>

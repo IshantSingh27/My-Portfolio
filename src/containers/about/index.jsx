@@ -48,10 +48,10 @@ const About = () => {
         <div className="about__content__servicesWrapper">
           <Animate play duration={1.5} delay={1} start={{ transform: "translateX(600px)" }} end={{ transform: "translatex(0px)" }}>
             <div className="about__content__servicesWrapper__decorativeShape">
-              <img className="logo top" src="/react.png" alt="React" />
-              <img className="logo right" src="/html.png" alt="HTML" />
-              <img className="logo bottom" src="/css.png" alt="CSS" />
-              <img className="logo left" src="/js.png" alt="JavaScript" />
+              <img className="logo top" src={`${process.env.PUBLIC_URL}/react.png`} alt="React" />
+              <img className="logo right" src={`${process.env.PUBLIC_URL}/html.png`} alt="HTML" />
+              <img className="logo bottom" src={`${process.env.PUBLIC_URL}/css.png`} alt="CSS" />
+              <img className="logo left" src={`${process.env.PUBLIC_URL}/js.png`} alt="JavaScript" />
 
             </div>
           </Animate>
